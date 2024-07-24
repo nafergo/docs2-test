@@ -1,39 +1,22 @@
-# [Lite Jekyll Theme](https://lite.jekyll.plus/)
+---
+title: Lite Helpdesk Jekyll Theme
+cta:
+  # - title: Contact Support
+  #   icon: lifesaver
+  #   url: https://themeforest.net/item/guia-helpdesk-and-documentation-html5-responsive-template/25254625/support
+  # - title: Learn Jekyll
+  #   icon: album
+  #   url: https://themeforest.net/item/guia-helpdesk-and-documentation-html5-responsive-template/25254625/support
+  - title: Customization Services
+    icon: code
+    url: https://unbound.studio/contact/
+---
 
-[![GitHub license](https://img.shields.io/github/license/ivanchromjak/jekyll-theme-lite.svg)](https://github.com/ivanchromjak/jekyll-theme-lite/blob/master/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/ivanchromjak/jekyll-theme-lite.svg)](https://github.com/ivanchromjak/jekyll-theme-lite/issues)
-[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-0070ba.svg?logo=paypal)](https://www.paypal.me/ivanchromjak)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/ivanchromjak/jekyll-theme-lite.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fivanchromjak%2Fjekyll-theme-lite)
-
-Lite is a Jekyll theme for customer self-service support site. Theme [demo](https://lite.jekyll.plus/) site.
-
-![screenshot](https://lite.jekyll.plus/assets/img/screenshot.png)
-
-## Features
-
-* Changelog page
-* Faq page
-* Image lightbox
-* Google maps
-* Github avatar
-* Contact form (FormSpree)
-* Disqus comments for posts
-* SEO tags
-* Google Analytics
-
-## Contents
-- [Installation](#installation)
-- [Home Page](#home-page)
-- [Support Posts](#support-posts)
-- [Changelog Page](#changelog-page)
-- [Content](#content)
-  - [Google Map](#google-map)
-  - [Images](#images)
-  - [Videos](#videos)
-  - [Comments](#comments)    
-- [Contributing](#contributing)
-- [Development](#development)
-- [Credits](#credits)
+#### Table of contents
+{:.no_toc}
+* TOC
+{:toc}
+{:.uk-list}
 
 ## Installation
 
@@ -213,7 +196,7 @@ To modify the primary color, open `/_sass/theme/variables.scss` and replace the 
 
 ```scss
 // Primary color
-$tm-primary-color: #05c896;
+$tm-primary-color: #0089ff;
 // Body background
 $tm-body-background: linear-gradient(to top, #0065fd 0%, #0089ff 100%);
 ```
@@ -224,24 +207,6 @@ Further style customisation can be done in the following files:
 /_sass/theme/variables.scss
 ```
 
-## Contributing
-
-Having trouble working with the theme or found a bug or typo? Interested in adding a feature or fixing a bug? Submit an issue or pull request.
-
-Before requesting features or submitting a pull requests, please ask yourself if it is something that most people will use, if not sure just ask.
-
-### Pull Requests
-When submitting a pull request:
-
-1. Clone the repository
-2. Create a branch off of master branch and give it a meaningful name e.g. new-feature-name.
-3. Open a pull request on GitHub and describe the feature or fix.
-
-
-## Author
-
-Lite was developed by [Ivan Chromjak](https://ivanchromjak.com).
-
 ## Credits
 
 - Google analytics https://www.google.com/analytics/
@@ -249,3 +214,18 @@ Lite was developed by [Ivan Chromjak](https://ivanchromjak.com).
 - UIkit front end framework https://getuikit.com/
 - Jekyll https://jekyllrb.com/
 - FormSpree https://formspree.io/
+
+## Support
+Depending on where you purchased the product, contact us:
+
+- Creative Market: Contact us through "Ask a question" button on the products page on Creative Market
+- Gumroad: The purchase receipt contains our contact email address
+
+Customer support is provided for up to six months from the purchase date and is provided Monday to Friday during the business week. We aim to answer all support requests daily, most are handled within 24h.
+
+Before contacting support please:
+
+- Read this documentation
+- Describe your problem in detail
+- Include links
+- Attach screenshot

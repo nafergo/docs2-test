@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="uk-margin-large-top tm-faq">
+  <div class="uk-container">
+
+    <div class="uk-grid-large uk-child-width-1-2@m" data-uk-grid>
+      <div><h1 class="uk-margin-medium-bottom uk-heading-hero text-shadow">{{ page.title }}</h1></div>
+      <div>
+        <ul class="uk-list uk-list-large">
+          {% for article in site.faqs %}
+            <li><a href="#{{ article.title | slugify }}" data-uk-scroll="duration: 400; offset: 140">{{ article.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <hr class="uk-margin-large-top uk-margin-remove-bottom">
+  </div>
+  <div class="uk-container uk-container-small">
+
+    {% for article in site.faqs %}
+
+      <article id="{{ article.title | slugify }}" class="article uk-article uk-margin-large-top">
+        <h2 class="article-faq-title uk-margin-medium-bottom">{{ article.title }}<a href="#" data-uk-totop data-uk-scroll="duration: 400" class="tm-totop uk-float-right"></a></h2>
+        <div class="article-content">{{ article.content }}</div>
+      </article>
+
+    {% endfor %}
+
+  </div>
+</div>
+
+{% include cta.html title="Didn't find an answer to your question?" button_text="Contact Us" button_url="https://codecanyon.net/item/knowledge-base-helpdesk-wiki-wordpress-plugin/5758910/support" blank="true" %}

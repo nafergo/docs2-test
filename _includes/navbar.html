@@ -1,0 +1,38 @@
+<div class="uk-container">
+    <div data-uk-navbar>
+        <div class="uk-navbar-left">
+
+            <a class="uk-navbar-item uk-logo" href="{{ "/" | relative_url }}">{% if site.brand.image %}<img src="{{ site.uploads | absolute_url }}{{ site.brand.image }}" alt="{{ site.brand.text | escape }}">{% else %}{{ site.brand.text | escape }}{% endif %}</a>
+
+        </div>
+        <div class="uk-navbar-center uk-visible@m">
+            <ul class="uk-navbar-nav">
+                {% for link in site.data.navigation_header %}
+                    {% if link.url contains 'http' %}
+                        {% assign domain = '' %}
+                    {% else %}
+                        {% assign domain = relative_url %}
+                    {% endif %}
+                    {% if link.url == page.url %}
+                        {% assign current = ' class="uk-active"' %}
+                    {% else %}
+                        {% assign current = null %}
+                    {% endif %}
+                    {% if link.title %}
+                        <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+        </div>
+
+        <div class="uk-navbar-right">
+
+          <a class="uk-navbar-toggle uk-hidden@m" href="#mobile" data-uk-toggle>
+              <span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+          </a>
+
+        </div>
+
+    </div>
+</div>

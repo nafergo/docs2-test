@@ -1,0 +1,113 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site title and description
+title:              Docs | Unbound Studio
+description:        Unbound Studio Doc
+
+# Site subpath, e.g. /blog
+baseurl:            "/docs2-test"
+
+# Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
+permalink:          /:title/
+
+# Site base hostname & protocol, e.g. http://example.com
+url:                https://nafergo.github.io
+
+# Site logo, image or text
+brand:
+    image:          # e.g. logo.png, upload logo image file to /assets/img/ folder
+    text:           HELP      # if the above "logo:" image variable  is not set, this text logo is displayed instead
+
+# Default author settings
+# author:
+#     name:       John Smith
+#     github:     PressApps    # Github username for avatar
+
+# Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
+# authors:
+#     peter:
+#         name:       Peter Brown
+#         github:     PressApps    # Github username for avatar
+
+# Social icons displayed in footer
+social:
+    email:
+    website:
+    facebook:
+    flickr:
+    dribbble:
+    github:
+    googleplus:
+    instagram:
+    linkedin:
+    pinterest:
+    twitter:
+    vimeo:
+    youtube:
+
+# Twitter share button
+twitter_username:
+
+# Default footer image settings
+footer:
+    copyright:      Made by a <a href="https://unbound.studio/">Unbound Studio</a> somewhere on the planet earth.
+    social:         false
+
+# Disqus comments shortname, requires Disqus account https://disqus.com/
+disqus:
+    shortname:      # 1234
+
+# Google analytics code, get your code here https://www.google.com/analytics/
+google_analytics:
+
+# Google maps API key, get your key here: https://developers.google.com/maps/documentation/javascript/get-api-key
+google_maps_api_key:
+
+mailchimp:
+  form_action:    "https://pressapps.us8.list-manage.com/subscribe/post?u=2e56c123105fcd37e5dab02bd&id=e6e945b784"
+  hidden_name:    "b_2e56c123105fcd37e5dab02bd_e6e945b784"
+  
+# Number of posts displayed on blog page
+# paginate: 10
+
+# Blog path
+# paginate_path:      "/news/:num/"
+
+# Path to post content assets directory i.e post images, pdfs etc
+uploads:        /uploads/
+
+# Build settings
+markdown:           kramdown
+highlighter:        rouge
+kramdown: 
+  toc_levels: "2" 
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-avatar
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+
+sass:
+  style:            compressed
+
+collections:
+  faqs:
+    output: false
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

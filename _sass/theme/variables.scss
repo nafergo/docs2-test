@@ -1,0 +1,83 @@
+// Color scheme variables
+
+// Global
+$global-xxlarge-font-size: 2.75rem;
+$global-xlarge-font-size: 2.25rem;
+$global-large-font-size: 1.75rem;
+$global-medium-font-size: 1.375rem;
+$global-small-font-size: 0.8889rem;
+// $global-font-family: 'Work Sans', sans-serif;
+// $global-font-size: 18px;
+
+// Primary color
+$global-primary-background: #ED473D;
+$global-secondary-background: #000;
+$global-danger-background: #de4339;
+$global-link-color: $global-primary-background;
+$global-color: #181818;
+$global-inverse-color: #fff;
+$global-border: #e6e6e6;
+
+$tm-xsmall-font-size: 0.7rem;
+$tm-letter-spacing-l: 3px;
+$tm-timeline-border-width: 2px;
+$tm-timeline-dot-diameter: 14px;
+$tm-timeline-color: $global-primary-background;
+
+$inverse-global-color: #fff;
+$inverse-global-muted-color: rgba(255, 255, 255, 0.7);
+
+$inverse-logo-color: $global-inverse-color;
+$inverse-navbar-nav-item-color: rgba(255, 255, 255, 0.7);
+$inverse-navbar-nav-item-hover-color: $global-inverse-color;
+$inverse-navbar-toggle-color: rgba(255, 255, 255, 0.7);
+$inverse-navbar-toggle-hover-color: $global-inverse-color;
+
+// Base
+$base-heading-color: $global-color;
+// $base-heading-font-family: 'Nunito Sans', sans-serif;
+// $base-body-font-weight: 300;
+$base-heading-font-weight: 700;
+$base-link-hover-text-decoration: none;
+
+$list-margin-top: 2px;
+
+
+$base-code-font-size: 0.875em;
+// $base-code-color: #e01070;
+// $inverse-base-code-color
+$base-code-font-family: Menlo,Monaco,Lucida Console,Liberation Mono, DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace, serif;
+$base-code-background: #fff;
+$base-code-padding-vertical: 2px;
+$base-code-padding-horizontal: 2px;
+
+// $base-pre-color: ;
+$base-pre-font-size: 0.8125rem;
+$base-pre-line-height: 1.5;
+
+$heading-hero-font-size: 2.5rem;
+$heading-hero-line-height: 1.2;
+$heading-hero-font-size-m: 3.25rem;
+$heading-hero-line-height-m: 1.2;
+$heading-hero-font-size-l: 3.625rem;
+$heading-hero-line-height-l: 1.2;
+
+$navbar-background: #fff;
+$navbar-dropdown-nav-item-color: rgba(255, 255, 255, 0.7);
+$navbar-dropdown-nav-item-hover-color: $global-inverse-color;
+$navbar-nav-item-text-transform: none;
+$search-navbar-font-size: 1.0625rem;
+$subnav-item-text-transform: none;
+
+$container-small-max-width: 800px;
+$background-default-background: #fff;
+$table-divider-border: rgba(255, 255, 255, 0.3);
+$container-small-max-width: 740px;
+$container-max-width: 1060px;
+$logo-font-size: 1.2rem;
+$button-default-background: $background-default-background;
+$article-title-font-size: $global-xxlarge-font-size;
+$article-title-line-height: 1.1;
+// $card-primary-background: rgba(255, 255, 255, 0.03);
+$card-default-box-shadow: 0 6px 20px rgba(0,0,0,0.16);
+$card-default-hover-box-shadow: 0 10px 40px rgba(0,0,0,0.16);

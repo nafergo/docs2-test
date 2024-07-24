@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+{% include mailchimp-header.html %}
+
+<div class="uk-section uk-section-default uk-section-large">
+
+    <div class="uk-container uk-container-small">
+        <article class="uk-article">
+
+            <h1 class="uk-heading-hero text-shadow">{{ page.title | escape }}</h1>
+
+            <div class="article-content uk-margin-large-top">
+                {{ content }}
+            </div>
+
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 120
+            });
+        </script>
+
+    </div>
+</div>
+
+<div class="uk-section uk-section-muted uk-section-large">
+    <div class="uk-container uk-text-center">
+
+        <h1 class="uk-margin-remove-top">Need More Help?</h1>
+
+        <div class="uk-grid-medium uk-child-width-1-2@s uk-child-width-expand@m uk-grid-small uk-grid-match uk-margin-large-top uk-text-center" data-uk-grid data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300">
+            {% for item in page.cta %}
+            <div>
+                <a href="{{ item.url }}" class="uk-card uk-card-default uk-card-hover uk-card-box uk-card-body uk-border-rounded" target="_blank">
+                    <span class="uk-icon-forder uk-border-rounded"><span data-uk-icon="icon: {{ item.icon }}; ratio: 2"></span></span>
+                    <p class="uk-text-bold">{{ item.title }}</p>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+
+{% include mailchimp.html %}
